@@ -28,6 +28,6 @@ Note that a failure that would be detected by this tool -- but not a more basic 
    * If the medium has passed a test previously, it's possible to re-test the read portion. For success, use the same `--bs`, `--seed`, and `--start` arguments, if provided before.
 
 ## Contributing
-Pull requests and issues are welcome.
+Pull requests and issues are welcome. Some open issues might be [easy](https://github.com/ironiridis/goblktest/labels/easy), try to take a stab at those if you're looking for something to do.
 
 
