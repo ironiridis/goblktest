@@ -15,17 +15,17 @@ Note that a failure that would be detected by this tool -- but not a more basic 
 `goblktest --open /dev/sdz --bs 4096`
 
 * `--open` (required)
-* * Specifies block device to open for testing.
+  * Specifies block device to open for testing.
 * `--bs` (optional, but recommended)
-* * Specifies block size for each write. Larger values will tend to perform better, but will make failure regions larger.
-* * Note that bs must be an even multiple of the hash size (presently SHA-512, 64 bytes) and must evenly divide the medium size
-* * (TODO for future: gather failed block regions and re-test at hash size)
+   * Specifies block size for each write. Larger values will tend to perform better, but will make failure regions larger.
+   * Note that bs must be an even multiple of the hash size (presently SHA-512, 64 bytes) and must evenly divide the medium size
+   * (TODO for future: gather failed block regions and re-test at hash size)
 * `--seed` (optional)
-* * If running the test on the same medium multiple times, use a different seed value to force a unique hash pattern each time.
+   * If running the test on the same medium multiple times, use a different seed value to force a unique hash pattern each time.
 * `--start` (optional)
-* * It's possible to skip some initial blocks on the device, for example to preserve an MBR. 
+   * It's possible to skip some initial blocks on the device, for example to preserve an MBR. 
 * `--checkonly` (optional)
-* * If the medium has passed a test previously, it's possible to re-test the read portion. For success, use the same `--bs`, `--seed`, and `--start` arguments, if provided before.
+   * If the medium has passed a test previously, it's possible to re-test the read portion. For success, use the same `--bs`, `--seed`, and `--start` arguments, if provided before.
 
 ## Contributing
 Pull requests and issues are welcome.
