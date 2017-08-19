@@ -19,7 +19,7 @@ Note that a failure that would be detected by this tool -- but not a more basic 
 * `--bs` (optional, but recommended)
    * Specifies block size for each write. Larger values will tend to perform better, but will make failure regions larger.
    * Note that bs must be an even multiple of the hash size (presently SHA-512, 64 bytes) and must evenly divide the medium size
-   * (TODO for future: gather failed block regions and re-test at hash size)
+   * ([TODO for future: gather failed block regions and re-test at hash size](https://github.com/ironiridis/goblktest/issues/1))
 * `--seed` (optional)
    * If running the test on the same medium multiple times, use a different seed value to force a unique hash pattern each time.
 * `--start` (optional)
